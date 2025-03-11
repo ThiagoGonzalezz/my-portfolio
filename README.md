@@ -16,8 +16,8 @@ A **support system for food accessibility** that leverages a network of public r
 ✔️ Donation tracking & volunteer coordination  
 ✔️ Scalable cloud deployment  
 
-🔹 **Tech Stack:**  
-Java | Javalin | REST APIs | Hibernate (ORM) | MySQL | AWS  
+🔹 **Technologies & Concepts:**  
+Java | Javalin | REST APIs | MVC | Broker | ORM (Hibernate) | Cloud Deployment (AWS) | Design Patterns
 
 ---
 
@@ -30,8 +30,8 @@ A **distributed system simulator** for process scheduling, memory management, an
 ✔️ **Memory Manager** – Paging, virtual memory & dynamic allocation  
 ✔️ **I/O System** – File system (DialFS) & device interaction  
 
-🔹 **Tech Stack:**  
-C | Sockets | Multithreading | Process Scheduling | Memory Virtualization | Logging  
+🔹 **Technologies & Concepts:**  
+ C | Sockets | Multithreading | Process Scheduling | Memory Management | File System (DialFS) | Logging & Configuration
 
 ---
 
@@ -43,8 +43,8 @@ A **custom testing framework in Ruby**, designed with **metaprogramming** and an
 ✔️ Mocking & spying for unit testing  
 ✔️ Structured test execution with detailed reporting  
 
-🔹 **Tech Stack:**  
-Ruby | Metaprogramming | DSL Design | Unit Testing | Mocking & Spying  
+🔹 **Technologies & Concepts:**  
+Ruby | Metaprogramming | DSL Design | Unit Testing | Mocking & Spying | Test Suites | Dynamic Assertions  
 
 ---
 
@@ -56,8 +56,8 @@ An **image-processing system** using a **parser combinator framework** that conv
 ✔️ Optimized AST transformations  
 ✔️ Image manipulation (scaling, rotation, translation, color adjustments)  
 
-🔹 **Tech Stack:**  
-Scala | Parser Combinators | Functional Programming | AST Manipulation | Graphics Rendering  
+🔹 **Technologies & Concepts:**  
+Scala | Parser Combinators | Functional Programming | AST Manipulation | DSL Design | Graphics Rendering
 
 ---
 
@@ -70,8 +70,8 @@ A **database-driven system** for managing an online marketplace, handling produc
 ✔️ **Optimized Queries** – Using indexing, stored procedures & triggers  
 ✔️ **Data Migration** – Transforming unstructured datasets into a normalized relational model  
 
-🔹 **Tech Stack:**  
-SQL Server | Data Normalization | T-SQL | BI Modeling | Query Optimization | Data Migration  
+🔹 **Technologies & Concepts:**  
+SQL Server | Data Normalization | T-SQL | Stored Procedures | BI Modeling | Query Optimization | Data Warehousing | Data Migration
 
 ---
 
