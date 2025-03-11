@@ -76,6 +76,8 @@ SQL Server | Data Normalization | T-SQL | Stored Procedures | BI Modeling | Quer
 ---
 
 ## 📬 **Contact**  
-📧 **Email:** [thiago23gonzalez@gmail.com](mailto:thiago23gonzalez@gmail.com)  
+📧 **Email:** [thiago23gonzalez@gmail.com](mailto:thiago23gonzalez@gmail.com)
+
+💼 **LinkedIn:** [Thiago Martín González](https://www.linkedin.com/in/thiago-martin-gonzalez/)  
 
 Feel free to reach out if you have any questions or want to discuss any of these projects! 🚀
