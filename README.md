@@ -44,7 +44,6 @@ The final interpreter renders the parsed images to the screen, files, or an inte
 
 
 <h3><a href="https://github.com/ThiagoGonzalezz/my-portfolio/tree/main/marketplace-db-system">🛒 Marketplace Data Management System</a></h3>  
-🛒 Marketplace Data Management System
 A database-driven system designed to manage an online marketplace, handling product listings, sales, payments, shipments, and invoicing. The project involves data migration, transforming an unstructured dataset into a normalized relational model and implementing a Business Intelligence (BI) layer for decision-making.
 The system is built on SQL Server 2019, utilizing stored procedures, triggers, and indexing strategies to ensure data integrity and performance. The transactional model enables efficient record management, while the BI model provides analytical insights through pre-aggregated views and structured queries. Key insights include sales performance, customer behavior, revenue distribution, and delivery efficiency.
 This project showcases expertise in database normalization, data migration, SQL optimization, and BI modeling, offering a robust foundation for scalable and efficient marketplace management.
