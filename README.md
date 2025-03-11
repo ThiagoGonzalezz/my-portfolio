@@ -28,8 +28,8 @@ A functional programming project using Scala, implementing parser combinators to
 structured language for describing and generating images.  
 
 <h3><a href="https://github.com/ThiagoGonzalezz/my-portfolio/tree/main/marketplace-db-system">🛒 Marketplace Data Management System</a></h3>  
-A functional programming project using Scala, implementing parser combinators to interpret a  
-structured language for describing and generating images.  
+Designed and implemented a transactional database and BI system for a marketplace, including data migration, query optimization, and analytics reporting.
+- Technologies: SQL Server | Relational Modeling | T-SQL | Stored Procedures | BI.
 
 ---
 
