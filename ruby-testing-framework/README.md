@@ -28,9 +28,52 @@ Este framework se construyó aplicando conceptos de metaprogramación y buenas p
   - **Test explotado** 💥
 
 ### Mocking y Spying
-- `mockear`: Reemplaza temporalmente la implementación de un método dentro de un test.
-- `espiar(objeto)`: Permite inspeccionar los mensajes recibidos por un objeto durante un test.
-- `haber_recibido`: Verifica que un objeto espiado haya recibido ciertos mensajes.
+- `mockear`: Reemplaza temporalmente la implementación de un método dentro de un test, permitiendo simular su comportamiento sin afectar el código original.
+- `espiar(objeto)`: Permite inspeccionar los mensajes recibidos por un objeto durante un test sin modificar su funcionalidad.
+- `haber_recibido`: Verifica que un objeto espiado haya recibido ciertos mensajes, permitiendo además chequear argumentos y cantidad de llamadas.
+
+#### Uso de Mocks
+El método `mockear` se usa para reemplazar la implementación de un método de forma temporal. Esto es útil cuando queremos evitar ejecutar lógica costosa o dependencias externas.
+
+```ruby
+class PersonaHome
+  def todas_las_personas
+    # Este método normalmente consultaría una base de datos
+  end
+end
+
+class PersonaHomeTest
+  def testear_mocking
+    PersonaHome.mockear(:todas_las_personas) do
+      [Persona.new(30), Persona.new(22)]
+    end
+
+    resultado = PersonaHome.new.todas_las_personas
+    resultado.deberia ser [Persona.new(30), Persona.new(22)]
+  end
+end
+```
+
+#### Uso de Spies
+El método `espiar(objeto)` se usa para monitorear la interacción con un objeto sin alterar su comportamiento.
+
+```ruby
+class Usuario
+  def iniciar_sesion(usuario, clave)
+    autenticar(usuario, clave)
+  end
+  
+  def autenticar(usuario, clave)
+    # Lógica de autenticación
+  end
+end
+
+usuario = Usuario.new
+usuario_espiado = espiar(usuario)
+usuario_espiado.iniciar_sesion("admin", "1234")
+
+usuario_espiado.deberia haber_recibido(:autenticar).con_argumentos("admin", "1234")
+```
 
 ---
 
@@ -96,4 +139,6 @@ Si tienes sugerencias o mejoras, ¡serán bienvenidas!
 
 ## Licencia
 Este proyecto es de código abierto y puede utilizarse libremente para fines académicos o profesionales.
+
+
 
