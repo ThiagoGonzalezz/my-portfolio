@@ -115,7 +115,6 @@ end
 ---
 
 ## Resultados de Test
-_Agrega aquí capturas de pantalla de los distintos resultados de los tests._
 
 ### Test Pasado ✅
 ![Resumen de la Suite](resources/exitos.png)
@@ -127,7 +126,6 @@ _Agrega aquí capturas de pantalla de los distintos resultados de los tests._
 
 ### Resumen de la Suite 📊
 ![Resumen de la Suite](resources/resultados.png)
-_Agregar imagen mostrando cantidad de tests corridos, pasados, fallidos y explotados_
 
 ---
 
