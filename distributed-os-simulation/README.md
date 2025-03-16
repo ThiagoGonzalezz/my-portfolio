@@ -1,4 +1,4 @@
-# 🚀 C-Comenta - Sistema Operativo
+# 🚀 C-Comenta
 
 ## 📌 Descripción
 C-Comenta es un simulador de sistema distribuido desarrollado como parte del Trabajo Práctico Cuatrimestral de la cátedra de Sistemas Operativos. Su objetivo es permitir la ejecución y planificación de procesos, administración de memoria y manejo de interfaces de entrada/salida mediante la implementación de distintos módulos que interactúan entre sí.
@@ -49,6 +49,7 @@ Las **interfaces de entrada/salida (I/O)** permiten la interacción con disposit
 - **Paginación** y administración de memoria
 - **Planificación de procesos** (FIFO, RR, VRR)
 - **Manejo de archivos** con un sistema de archivos simplificado
+- **Commons de la cátedra** para facilitar desarrollo
 
 ---
 
@@ -72,21 +73,6 @@ Las **interfaces de entrada/salida (I/O)** permiten la interacción con disposit
 
 ---
 
-## ▶️ Ejecución
-1. Levantar los módulos en orden:
-   ```sh
-   ./memoria config/memoria.config &
-   ./cpu config/cpu.config &
-   ./kernel config/kernel.config &
-   ./interfaz_io config/io.config &
-   ```
-2. Utilizar la consola del kernel para gestionar procesos:
-   ```sh
-   INICIAR_PROCESO script1
-   ```
-
----
-
 ## ⚙️ Configuración
 Cada módulo cuenta con un archivo de configuración en la carpeta `config/`, donde se definen los parámetros de conexión y comportamiento.
 
@@ -98,6 +84,31 @@ PUERTO_MEMORIA=8002
 ALGORITMO_PLANIFICACION=VRR
 QUANTUM=2000
 ```
+
+---
+
+## 🚀 Guia de Despliegue
+Para poder hacer el deploy del TP y ejecutar el proyecto, es necesario tener clonado el siguiente repositorio:
+
+```sh
+git clone https://github.com/sisoputnfrba/so-deploy.git
+cd so-deploy
+```
+
+Luego es necesario hacer el deploy del proyecto y asignar las variables por configuración (IP's de los módulos y PATH's):
+
+```sh
+./deploy.sh -r=release -p=utils -p=kernel -p=cpu -p=memoria -p=entradasalida "tp-2024-1c-ChatGPT-CarreanOS"
+./configure.sh IP_XXX 192.168.x.xxx
+./configure.sh PATH_XXXX /xxx/xxx
+```
+
+Por último, ejecutar los módulos, pasándole el path de la configuración, en el siguiente orden:
+
+1. **Memoria**
+2. **CPU**
+3. **Kernel**
+4. **Interfaces**
 
 ---
 
@@ -119,4 +130,5 @@ make test
 
 ## 📜 Licencia
 Este proyecto es de uso académico y pertenece a la cátedra de Sistemas Operativos de la UTN FRBA.
+
 
