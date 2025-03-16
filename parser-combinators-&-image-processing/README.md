@@ -47,19 +47,19 @@ Se implementa un parser que traduce el lenguaje de descripción de imágenes a u
 ```txt
 triangulo[0 @ 100, 200 @ 300, 150 @ 500]
 ```
-![Triángulo](resources/triangulo.png)
+<img src="resources/triangulo.png" alt="Triángulo" width="300">
 
 #### Rectángulo
 ```txt
 rectangulo[0 @ 100, 200 @ 300]
 ```
-![Rectángulo](resources/rectangulo.png)
+<img src="resources/rectangulo.png" alt="Rectángulo" width="300">
 
 #### Círculo
 ```txt
 circulo[100 @ 100, 50]
 ```
-![Círculo](resources/circulo.png)
+<img src="resources/circulo.png" alt="Círculo" width="300">
 
 ### Agrupaciones
 
@@ -70,7 +70,7 @@ grupo(
    circulo[200 @ 350, 100]
 )
 ```
-![Grupo](resources/grupo.png)
+<img src="resources/grupo.png" alt="Grupo" width="300">
 
 #### Grupo Anidado
 ```txt
@@ -86,7 +86,7 @@ grupo(
     )
 )
 ```
-![Grupo Anidado](resources/grupo_anidado.png)
+<img src="resources/grupo_anidado.png" alt="Grupo Anidado" width="300">
 
 ### Transformaciones
 
@@ -99,7 +99,7 @@ color[60, 150, 200](
     )
 )
 ```
-![Color](resources/color.png)
+<img src="resources/color.png" alt="Color" width="300">
 
 #### Escala
 ```txt
@@ -107,7 +107,7 @@ escala[2.5, 1](
  rectangulo[0 @ 100, 200 @ 300]
 )
 ```
-![Escala](resources/escala.png)
+<img src="resources/escala.png" alt="Escala" width="300">
 
 #### Rotación
 ```txt
@@ -115,7 +115,7 @@ rotacion[45](
  rectangulo[300 @ 0, 500 @ 200]
 )
 ```
-![Rotación](resources/rotacion.png)
+<img src="resources/rotacion.png" alt="Rotacion" width="300">
 
 #### Traslación
 ```txt
@@ -123,7 +123,7 @@ traslacion[200, 50](
  triangulo[0 @ 100, 200 @ 300, 150 @ 500]
 )
 ```
-![Traslación](resources/traslacion.png)
+<img src="resources/traslacion.png" alt="Traslacion" width="300">
 
 ---
 
