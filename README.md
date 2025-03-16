@@ -4,6 +4,8 @@ Welcome to my GitHub portfolio! Here, you'll find a collection of projects that 
 
 These projects range from **individual work** to **collaborative efforts**, covering topics such as distributed systems, software architecture, testing frameworks, and database management.  
 
+<img src="resources/portada-portafolio.png" alt="Portada Portafolio" width="400">
+
 ---
 
 ## 📌 **Projects**  
