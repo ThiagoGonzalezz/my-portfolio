@@ -118,15 +118,15 @@ end
 _Agrega aquí capturas de pantalla de los distintos resultados de los tests._
 
 ### Test Pasado ✅
-_Agregar imagen_
-
+![Resumen de la Suite](resources/exitos.png)
 ### Test Fallido ❌
-_Agregar imagen_
+![Resumen de la Suite](resources/fallas.png)
 
 ### Test Explotado 💥
-_Agregar imagen_
+![Resumen de la Suite](resources/explosiones.png)
 
 ### Resumen de la Suite 📊
+![Resumen de la Suite](resources/resultados.png)
 _Agregar imagen mostrando cantidad de tests corridos, pasados, fallidos y explotados_
 
 ---
@@ -158,7 +158,6 @@ Si tienes sugerencias o mejoras, ¡serán bienvenidas!
 
 ## Licencia
 Este proyecto es de código abierto y puede utilizarse libremente para fines académicos o profesionales.
-
 
 
 
