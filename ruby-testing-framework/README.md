@@ -77,6 +77,22 @@ usuario_espiado.deberia haber_recibido(:autenticar).con_argumentos("admin", "123
 
 ---
 
+## Tecnologías y Conceptos Utilizados
+
+### Tecnologías
+- **Ruby**: Lenguaje de programación dinámico y orientado a objetos.
+- **Metaprogramación en Ruby**: Uso de `method_missing`, refinements y evaluación dinámica de código.
+- **DSLs (Domain-Specific Languages)**: Implementación de una sintaxis amigable para definir aserciones de testeo.
+- **Mocks y Spies**: Simulación de dependencias y monitoreo de interacciones en objetos.
+
+### Conceptos Claves
+- **Testing Automatizado**: Ejecución de pruebas sin intervención manual para validar el comportamiento del código.
+- **Inversión de Control**: Uso de técnicas como mocking para desacoplar dependencias.
+- **Diseño Orientado a Objetos**: Aplicación de encapsulación y polimorfismo para estructurar el framework.
+- **Patrones de Diseño**: Implementación de estrategias como el patrón Proxy en spies y mocks.
+
+---
+
 ## Ejemplo de Uso
 
 ```ruby
@@ -110,6 +126,9 @@ _Agregar imagen_
 ### Test Explotado 💥
 _Agregar imagen_
 
+### Resumen de la Suite 📊
+_Agregar imagen mostrando cantidad de tests corridos, pasados, fallidos y explotados_
+
 ---
 
 ## Ejecución
@@ -139,6 +158,8 @@ Si tienes sugerencias o mejoras, ¡serán bienvenidas!
 
 ## Licencia
 Este proyecto es de código abierto y puede utilizarse libremente para fines académicos o profesionales.
+
+
 
 
 
