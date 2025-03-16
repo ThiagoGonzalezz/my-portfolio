@@ -1,5 +1,4 @@
-# 🏪 Marketplace - Gestión de Datos
-
+# 🏪 Marketplace - Sistema de Base de Datos
 ## 📌 Descripción
 Este proyecto consiste en el desarrollo de un sistema de **Marketplace**, en el cual vendedores y clientes pueden interactuar a través de publicaciones, ventas, pagos y envíos. Además, se implementará un modelo de **Inteligencia de Negocios (BI)** para el análisis y la toma de decisiones.
 
