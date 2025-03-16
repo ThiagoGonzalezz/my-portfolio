@@ -4208,6 +4208,6 @@ grupo(
 
 ---
 
-## 📜 Licencia
+## 📝 Licencia
 Este proyecto es de código abierto y puede utilizarse con fines académicos y educativos.
 
