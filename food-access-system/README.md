@@ -1,80 +1,74 @@
-# java-base-project
+# Sistema de Mejora del Acceso Alimentario en Contextos de Vulnerabilidad
 
-Esta es una plantilla de proyecto diseñada para: 
+## Descripción
+Este proyecto es un sistema integral diseñado para mejorar el acceso a alimentos en comunidades vulnerables mediante la gestión eficiente de heladeras comunitarias. La solución aborda problemas clave como la falta de disponibilidad de viandas, la distribución ineficiente de donaciones y el monitoreo del estado de las heladeras.
 
-* Java 17. :warning: Si bien el proyecto no lo limita explícitamente, el comando `mvn verify` no funcionará con versiones más antiguas de Java. 
-* JUnit 5. :warning: La versión 5 de JUnit es la más nueva del framework y presenta algunas diferencias respecto a la versión "clásica" (JUnit 4). Para mayores detalles, ver: 
-  *  [Apunte de herramientas](https://docs.google.com/document/d/1VYBey56M0UU6C0689hAClAvF9ILE6E7nKIuOqrRJnWQ/edit#heading=h.dnwhvummp994)
-  *  [Entrada de Blog (en inglés)](https://www.baeldung.com/junit-5-migration) 
-  *  [Entrada de Blog (en español)](https://www.paradigmadigital.com/dev/nos-espera-junit-5/)
-* Maven 3.8.1 o superior
+El sistema permite a los colaboradores registrarse, realizar donaciones monetarias y de viandas, gestionar la distribución de alimentos y recibir reconocimientos por su aporte. Además, integra sensores para monitorear la temperatura y detectar incidentes en las heladeras, asegurando la calidad y seguridad de los alimentos.
 
-## Ejecutar tests
+## Características Principales
 
-```
-mvn test
-```
+### **Gestión de Colaboradores**
+- Registro de colaboradores (personas humanas y jurídicas).
+- Diversas formas de contribución: donaciones monetarias, entrega de viandas, distribución de viandas, y administración de heladeras.
+- Sistema de reconocimiento y acumulación de puntos según el aporte realizado.
 
-## Validar el proyecto de forma exahustiva
+### **Gestión de Heladeras**
+- Alta, baja y modificación de heladeras.
+- Ubicación y monitoreo en un mapa interactivo.
+- Sistema de suscripción a heladeras para recibir notificaciones sobre disponibilidad de alimentos o problemas técnicos.
 
-```
-mvn clean verify
-```
+### **Distribución y Consumo de Viandas**
+- Registro de viandas con detalles como tipo de comida, fecha de caducidad y ubicación.
+- Control de acceso mediante tarjetas asignadas a personas en situación de vulnerabilidad.
+- Restricciones de uso de tarjetas para evitar abusos (cantidad limitada de extracciones por día).
 
-Este comando hará lo siguiente:
+### **Monitoreo y Seguridad**
+- Sensores de temperatura para detectar anomalías y prevenir el deterioro de alimentos.
+- Sensores de movimiento para alertar posibles robos o accesos indebidos.
+- Reporte de incidentes y asignación automática de técnicos para la reparación de heladeras.
 
- 1. Ejecutará los tests
- 2. Validará las convenciones de formato mediante checkstyle
- 3. Detectará la presencia de (ciertos) code smells
- 4. Validará la cobertura del proyecto
+### **Integraciones y Automatización**
+- API REST propia para interoperabilidad con otros sistemas.
+- Integración con servicio externo de recomendación de puntos estratégicos para colocar nuevas heladeras.
+- Integración con una pasarela de pagos para gestionar donaciones monetarias.
+- Interfaz conversacional en Telegram para que los técnicos registren incidentes y actualicen el estado de las heladeras.
 
-## Entrega del proyecto
+### **Reportes y Auditoría**
+- Reportes automáticos sobre cantidad de viandas donadas, distribuidas y consumidas.
+- Registro de fallas e incidentes técnicos.
+- Seguimiento de colaboraciones y gestión de auditoría.
 
-Para entregar el proyecto, crear un tag llamado `entrega-final`. Es importante que antes de realizarlo se corra la validación
-explicada en el puntoGeografico anterior. Se recomienda hacerlo de la siguiente forma:
+## Tecnologías Utilizadas
 
-```
-mvn clean verify && git tag entrega-final && git push origin HEAD --tags
-```
+- **Backend:** Java con Javalin y Hibernate.
+- **Frontend:** HTML, CSS y JavaScript con Bootstrap para diseño responsivo.
+- **Base de Datos:** PostgreSQL con ORM para persistencia de datos.
+- **APIs:** Integración con servicios externos para geolocalización, pagos y mensajería.
+- **Seguridad:** Implementación de OWASP Top Ten y autenticación segura con control de credenciales.
+- **Broker de Mensajería:** Para comunicación en tiempo real con las heladeras y reporte de alertas.
 
-## Configuración del IDE (IntelliJ)
+## Instalación y Ejecución
 
-### Usar el SDK de Java 17
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/usuario/proyecto-food-access.git
+   ```
+2. Configurar la base de datos PostgreSQL e inicializar el esquema.
+3. Ejecutar el backend con Javalin:
+   ```bash
+   ./gradlew run
+   ```
+4. Acceder a la interfaz web a través de `http://localhost:7000`.
 
-1. En **File/Project Structure...**, ir a **Project Settings | Project**
-2. En **Project SDK** seleccionar la versión 17 y en **Project language level** seleccionar `17 - Sealed types, always-strict floating-point semantics`
+## Documentación
 
-![image](https://user-images.githubusercontent.com/39303639/228126065-221b9851-fb96-4f7f-a8e1-010732dc7ef6.png)
+- [Diagrama de Clases](docs/diagrama_clases.pdf)
+- [API REST Docs](docs/api_documentation.md)
+- [Guía de instalación](docs/install_guide.md)
+- [Manual de usuario](docs/manual_usuario.md)
 
-### Usar fin de linea unix
-1. En **File/Settings...**, ir a **Editor | Code Style**.
-2. En la lista **Line separator**, seleccionar `Unix and OS X (\n)`.
+## Licencia
 
-![image](https://user-images.githubusercontent.com/39303639/228126546-352289fa-8feb-4b39-99db-d8b860915fea.png)
+Este proyecto es de código abierto bajo la licencia MIT.
 
-### Tabular con dos espacios
-
-1. En **File/Settings...**, ir a **Editor | Code Style | Java | Tabs and Indents**.
-2. Cambiar **Tab size**, **Indent** y **Continuation indent** a 2, 2 y 4 respectivamente:
-
-![image](https://user-images.githubusercontent.com/39303639/228127009-8c84ea72-969b-4e05-b311-45e3688a4164.png)
-
-### Ordenar los imports
-
-1. En **File/Settings...**, ir a **Editor | Code Style | Java | Imports**.
-2. Cambiar **Class count to use import with '*'** y **Names count to use static import with '*'** a un número muy alto (ej: 99).
-3. En **Import Layout**, dejarlo como se muestra a continuación:
-    - `import static all other imports`
-    - `<blank line>`
-    - `import all other imports`
-
-![image](https://user-images.githubusercontent.com/39303639/228126787-36f9ecff-27f2-4b99-bf11-a6bd89f67087.png)
-
-### Instalar y configurar Checkstyle
-
-1. Instalar el plugin https://plugins.jetbrains.com/plugin/1065-checkstyle-idea:
-2. En **File/Settings...**, ir a **Tools | Checkstyle**.
-3. Configurarlo activando los Checks de Google y la versión de Checkstyle `== 9.0.1`:
-
-![image](https://github.com/dds-utn/java-base-project/assets/11719816/b1edc122-4675-4f8d-bffc-9e3d3366fac6)
 
