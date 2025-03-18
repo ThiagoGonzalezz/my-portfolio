@@ -129,6 +129,6 @@ make test
 ---
 
 ## 📜 Licencia
-Este proyecto es de uso académico y pertenece a la cátedra de Sistemas Operativos de la UTN FRBA.
+Este proyecto es de código abierto y puede utilizarse con fines académicos y educativos.
 
 
