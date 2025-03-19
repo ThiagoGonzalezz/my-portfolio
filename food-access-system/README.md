@@ -53,27 +53,21 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 
 ---  
 
-## 🚀 Instalación y Ejecución  
+## 📚 Documentación
 
-1. Clonar el repositorio:  
-   ```bash  
-   git clone https://github.com/usuario/proyecto-food-access.git  
-   ```  
-2. Configurar la base de datos MySQL e inicializar el esquema.  
-3. Ejecutar el backend con Javalin:  
-   ```bash  
-   ./gradlew run  
-   ```  
-4. Acceder a la interfaz web a través de `http://localhost:7000`.  
+### 📌 **Diagramas y Arquitectura**
+- [📄 Diagrama de Clases](docs/diagrama_clases.pdf)
+- [🗄️ Diagrama Entidad-Relación](docs/diagrama_er.pdf)
+- [🚀 Diagrama de Despliegue](docs/diagrama_despliegue.pdf)
 
----  
+### 🔌 **API y Desarrollo**
+- [📖 Documentación API REST](docs/api_documentation.md)
 
-## 📚 Documentación  
-
-- [Diagrama de Clases](docs/diagrama_clases.pdf)  
-- [API REST Docs](docs/api_documentation.md)  
-- [Guía de instalación](docs/install_guide.md)  
-- [Manual de usuario](docs/manual_usuario.md)  
+### 🛠️ **Instalación y Uso**
+- [⚙️ Guía de Instalación](docs/install_guide.md)
+- [📘 Manual de Usuario](docs/manual_usuario.md)
+- [🎯 Casos de Uso](docs/casos_de_uso.md)
+- [📍 Flujo de Navegación](docs/flujo_navegacion.md)
 
 ---  
 
