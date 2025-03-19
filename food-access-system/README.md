@@ -66,7 +66,7 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 ### 🛠️ **Instalación y Uso**
 - [⚙️ Guía de Instalación](docs/install_guide.md)
 - [📘 Manual de Usuario](docs/manual_usuario.md)
-- [🎯 Casos de Uso](docs/casos_de_uso.md)
+- [🎯 Casos de Uso](vianditasONG/docs/casosDeUso/UseCaseDiagram.png)
 - [📍 Flujo de Navegación](docs/flujo_navegacion.md)
 
 ---  
