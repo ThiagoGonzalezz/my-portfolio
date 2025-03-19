@@ -57,7 +57,7 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 
 ### 📌 **Diagramas y Arquitectura**
 - [📄 Diagrama de Clases](docs/diagrama_clases.pdf)
-- [🗄️ Diagrama Entidad-Relación](docs/diagrama_er.pdf)
+- [🗄️ Diagrama Entidad-Relación](vianditasONG/docs/DER/DER.png)
 - [🚀 Diagrama de Despliegue](docs/diagrama_despliegue.pdf)
 
 ### 🔌 **API y Desarrollo**
