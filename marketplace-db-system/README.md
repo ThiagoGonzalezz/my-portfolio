@@ -91,5 +91,5 @@ SELECT * FROM BI_Facturacion_Provincia;
 ---
 
 ## 📜 Licencia
-Proyecto académico desarrollado en la UTN FRBA para la materia **Gestión de Datos**.
+Este proyecto es de código abierto y puede utilizarse con fines académicos y educativos.
 

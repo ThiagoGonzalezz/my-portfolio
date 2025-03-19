@@ -1,9 +1,20 @@
-# 🍽️ Sistema de Mejora del Acceso Alimentario en Contextos de Vulnerabilidad  
+# 🥪 Sistema para la Distribución de Alimentos en Zonas Vulnerables
 
 ## 📌 Descripción  
 Este proyecto es un sistema integral diseñado para mejorar el acceso a alimentos en comunidades vulnerables mediante la gestión eficiente de **heladeras comunitarias**. La solución aborda problemas clave como la falta de disponibilidad de viandas, la distribución ineficiente de donaciones y el monitoreo del estado de las heladeras.  
 
 El sistema permite a los colaboradores registrarse, realizar **donaciones monetarias y de viandas**, gestionar la distribución de alimentos y recibir reconocimientos por su aporte. Además, integra **sensores** para monitorear la temperatura y detectar incidentes en las heladeras, asegurando la calidad y seguridad de los alimentos.  
+
+---  
+
+## 🛠️ Tecnologías Utilizadas  
+
+- **Backend:** Java con Javalin y Hibernate.  
+- **Frontend:** HTML, CSS y JavaScript con Bootstrap para diseño responsivo.  
+- **Base de Datos:** MySQL con ORM para persistencia de datos.  
+- **APIs:** Integración con servicios externos para geolocalización, pagos y mensajería.  
+- **Seguridad:** Implementación de OWASP Top Ten y autenticación segura con control de credenciales.  
+- **Broker de Mensajería:** Para comunicación en tiempo real con las heladeras y reporte de alertas.  
 
 ---  
 
@@ -42,44 +53,28 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 
 ---  
 
-## 🛠️ Tecnologías Utilizadas  
+## 📚 Documentación
 
-- **Backend:** Java con Javalin y Hibernate.  
-- **Frontend:** HTML, CSS y JavaScript con Bootstrap para diseño responsivo.  
-- **Base de Datos:** PostgreSQL con ORM para persistencia de datos.  
-- **APIs:** Integración con servicios externos para geolocalización, pagos y mensajería.  
-- **Seguridad:** Implementación de OWASP Top Ten y autenticación segura con control de credenciales.  
-- **Broker de Mensajería:** Para comunicación en tiempo real con las heladeras y reporte de alertas.  
+### 📌 **Diagramas y Arquitectura**
+- [📄 Diagrama de Clases](docs/diagrama_clases.pdf)
+- [🗄️ Diagrama Entidad-Relación](docs/diagrama_er.pdf)
+- [🚀 Diagrama de Despliegue](docs/diagrama_despliegue.pdf)
 
----  
+### 🔌 **API y Desarrollo**
+- [📖 Documentación API REST](docs/api_documentation.md)
 
-## 🚀 Instalación y Ejecución  
-
-1. Clonar el repositorio:  
-   ```bash  
-   git clone https://github.com/usuario/proyecto-food-access.git  
-   ```  
-2. Configurar la base de datos MySQL e inicializar el esquema.  
-3. Ejecutar el backend con Javalin:  
-   ```bash  
-   ./gradlew run  
-   ```  
-4. Acceder a la interfaz web a través de `http://localhost:7000`.  
+### 🛠️ **Instalación y Uso**
+- [⚙️ Guía de Instalación](docs/install_guide.md)
+- [📘 Manual de Usuario](docs/manual_usuario.md)
+- [🎯 Casos de Uso](docs/casos_de_uso.md)
+- [📍 Flujo de Navegación](docs/flujo_navegacion.md)
 
 ---  
 
-## 📚 Documentación  
+## 📝 Licencia
 
-- [Diagrama de Clases](docs/diagrama_clases.pdf)  
-- [API REST Docs](docs/api_documentation.md)  
-- [Guía de instalación](docs/install_guide.md)  
-- [Manual de usuario](docs/manual_usuario.md)  
-
----  
-
-## 🐟 Licencia  
-
-Este proyecto es de código abierto bajo la licencia MIT.  
+Este proyecto es de código abierto y puede utilizarse con fines académicos y educativos.
+ 
 
 
 
