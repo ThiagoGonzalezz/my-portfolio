@@ -1,4 +1,4 @@
-# 🥪 Sistema de Mejora del Acceso Alimentario en Contextos de Vulnerabilidad  
+# 🥪 Sistema para la Distribución de Alimentos en Zonas Vulnerables
 
 ## 📌 Descripción  
 Este proyecto es un sistema integral diseñado para mejorar el acceso a alimentos en comunidades vulnerables mediante la gestión eficiente de **heladeras comunitarias**. La solución aborda problemas clave como la falta de disponibilidad de viandas, la distribución ineficiente de donaciones y el monitoreo del estado de las heladeras.  
