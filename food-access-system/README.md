@@ -56,9 +56,9 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 ## 📚 Documentación
 
 ### 📌 **Diagramas y Arquitectura**
-- [📄 Diagrama de Clases](vianditasONG/docs/diagramaDeClases/DDC.png)
-- [🗄️ Diagrama Entidad-Relación](vianditasONG/docs/diagramaEntidadRelacion/DER.png)
-- [🚀 Diagrama de Despliegue](vianditasONG/docs/DiagramaDeDespliegue.png)
+- [📄 Diagrama de Clases](vianditasONG/docs/diagramas/diagramaDeClases/DDC.png)
+- [🗄️ Diagrama Entidad-Relación](vianditasONG/docs/diagramas/diagramaEntidadRelacion/DER.png)
+- [🚀 Diagrama de Despliegue](vianditasONG/docs/diagramas/DiagramaDeDespliegue.png)
 
 ### 🔌 **API REST**
 - [📖 Documentación API REST](APIServicioRecomendadorDePuntosDeDonacion)
@@ -66,12 +66,12 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 ### 🛠️ **Instalación y Uso**
 - ⚙️ Guía de Instalación
 - 📘 Manual de Usuario
-- [🎯 Casos de Uso](vianditasONG/docs/casosDeUso/UseCaseDiagram.png)
+- [🎯 Casos de Uso](vianditasONG/docs/diagramas/casosDeUso/UseCaseDiagram.png)
 
 ### 🎨 **UX/UI**
-- 🖼️ Wireframes
-- 📐 Bocetos
-- 📍 Flujo de Navegación
+- [🖼️ Maquetado](vianditasONG/docs/front/maquetado/maquetado.fig)
+- [📐 Wireframes](vianditasONG/docs/front/wireframes/wireframesTotales.pdf)
+- [📍 Flujo de Navegación]()
 
 ### 📦 **Producto Final**
 - 📸 Demo
