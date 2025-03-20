@@ -10,7 +10,7 @@ These projects range from **individual work** to **collaborative efforts**, cove
 
 ## 📌 **Projects**  
 
-### [🍽️ Food Access Management System](https://github.com/ThiagoGonzalezz/my-portfolio/tree/main/food-access-system)  
+### [🥪 Food Access Management System](https://github.com/ThiagoGonzalezz/my-portfolio/tree/main/food-access-system)  
 A **support system for food accessibility** that leverages a network of public refrigerators to facilitate donations and ensure efficient food distribution.  
 
 🔹 **Features:**  
