@@ -28,32 +28,50 @@ Esta API proporciona un servicio REST para obtener un listado de los puntos de d
 ---
 
 ## 🌍 Ejemplo de solicitudes
+<details>
+  <summary>🔹 Solicitud con radio predeterminado (5 km)</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.66291992043316&longitud=-58.46732181710551
 ```
 
-### Ejemplo de solicitud con radio específico
+</details>
+
+<details>
+  <summary>🔹 Solicitud con radio específico</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.66291992043316&longitud=-58.46732181710551&radio=1000
 ```
 
-### Ejemplo de solicitud con radio específico y horario específico
+</details>
+
+<details>
+  <summary>🔹 Solicitud con radio específico y horario específico</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&longitud=-58.420012658665414&radio=250&horarioBuscado=23.00.00
 ```
 
-### Ejemplo de solicitud con radio específico y días
+</details>
+
+<details>
+  <summary>🔹 Solicitud con radio específico y días</summary>
+
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&longitud=-58.420012658665414&radio=250&diasBuscados=lunes
 ```
 
-### Ejemplo de solicitud con radio específico, horario específico y días
+</details>
+
+<details>
+  <summary>🔹 Solicitud con radio específico, horario específico y días</summary>
+
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&longitud=-58.420012658665414&radio=250&horarioBuscado=23.00.00&diasBuscados=lunes
 ```
+
+</details>
 
 ---
 
