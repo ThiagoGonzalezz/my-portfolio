@@ -71,7 +71,7 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 ### 🎨 **UX/UI**
 - [📐 Wireframes](vianditasONG/docs/front/wireframes/wireframesTotales.pdf)
 - [🖼️ Maquetado](vianditasONG/docs/front/maquetado/maquetado.fig)
-- [📍 Flujo de Navegación]()
+- [📍 Flujo de Navegación](https://www.figma.com/design/u2p54juzHgMHk7J5hXyxkI/DDS)
 
 ### 📦 **Producto Final**
 - 📸 Demo
