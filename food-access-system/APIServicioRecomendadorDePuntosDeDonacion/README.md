@@ -76,6 +76,11 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
 ---
 
 ## 📤 Ejemplo de respuesta esperada
+
+
+<details>
+  <summary>📜 Ver respuesta JSON</summary>
+
 ```bash
 [
     {
@@ -128,6 +133,8 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
     }
 ]
 ```
+
+</details>
 
 ---
 
