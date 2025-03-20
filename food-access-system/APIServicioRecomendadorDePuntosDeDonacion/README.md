@@ -146,6 +146,7 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
 - **MySQL**: Asegúrate de que MySQL esté instalado y en ejecución.
 
 ### 🔧 Pasos para el Despliegue
+
 #### 1️⃣ Crear la Base de Datos
 1. Abre tu cliente MySQL (puede ser MySQL Workbench o la línea de comandos).
 2. Ejecuta el siguiente comando SQL para crear la base de datos:
@@ -157,6 +158,9 @@ CREATE DATABASE puntosDeDonacionDB;
 #### 2️⃣ Modificar el `persistence.xml`
   1. Navega a la carpeta `src/main/resources` de tu proyecto.
   2. Abre el archivo `persistence.xml` y asegúrate de que las configuraciones de la base de datos estén correctas. Aquí tienes un ejemplo modificado:
+
+<details>
+  <summary> 👀 Ver ejemplo </summary>
 
    ```xml
      <?xml version="1.0" encoding="UTF-8"?>
@@ -184,9 +188,15 @@ CREATE DATABASE puntosDeDonacionDB;
          </persistence-unit>
      </persistence>
 ```
+
+</details>
+
 #### 3️⃣ Cargar los Puntos de Donación
   1. Crea una clase para cargar los puntos de donación en la base de datos. Usa el siguiente código:
 
+<details>
+  <summary> 💻 Ver código </summary>
+  
    ```java
    public class CargaDePuntosBD implements WithSimplePersistenceUnit {
 
@@ -234,10 +244,15 @@ CREATE DATABASE puntosDeDonacionDB;
    }
 ```
 
+</details>
+
   2. Agrega los distintos puntos de donacion al código y ejecuta el `main` de esta clase para cargar los puntos de donación en la base de datos.
 
 #### 4️⃣ Levantar el Servidor
   1. Crea una clase para iniciar el servidor:
+
+<details>
+  <summary> 📂 Ver clase </summary>
 
      ```java
      public class RecomendacionDePuntosMain implements WithSimplePersistenceUnit {
@@ -249,6 +264,9 @@ CREATE DATABASE puntosDeDonacionDB;
              new RecomendadorDePuntosDonacionesController(app, recomendadorDePuntosDonacionesService);
          }
      }
+```
+
+</details>
 
   2. Ejecuta el `main` de esta clase. El servidor debería estar corriendo en `http://localhost:7000`.
 
