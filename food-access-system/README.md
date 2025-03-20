@@ -9,10 +9,10 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 
 ## 🛠️ Tecnologías Utilizadas  
 
-- **Backend:** Java con Javalin y Hibernate.  
-- **Frontend:** HTML, CSS y JavaScript con Bootstrap para diseño responsivo.  
-- **Base de Datos:** MySQL con ORM para persistencia de datos.  
-- **APIs:** Integración con servicios externos para geolocalización, pagos y mensajería.  
+- **Backend:** Java con el framework Javalin y Hibernate.  
+- **Frontend:** Figma, HTML, CSS, JavaScript y Handlebars como motor de plantillas .  
+- **Base de Datos:** MySQL con Hibernate como ORM para la persistencia de datos.  
+- **APIs:** Integración con servicios externos para geolocalización y mensajería.  
 - **Seguridad:** Implementación de OWASP Top Ten y autenticación segura con control de credenciales.  
 - **Broker de Mensajería:** Para comunicación en tiempo real con las heladeras y reporte de alertas.  
 
