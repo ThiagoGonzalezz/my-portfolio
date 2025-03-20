@@ -1,21 +1,21 @@
-# 🏥 Recomendador de Puntos de Donación - API REST
+# Recomendador de Puntos de Donación - API REST
 ![Versión](https://img.shields.io/badge/Versión-1.0.0-brightgreen)
 
-## 📄 Documentación
+## Documentación
 
 Puedes encontrar la documentación completa de la API en [SwaggerHub](https://app.swaggerhub.com/apis/THGONZALEZ/API_Recomendacion_de_Puntos_de_Donacion/1.0.0).
 
 ---
 
-## 📌 Descripción
+## Descripción
 
 Esta API proporciona un servicio REST para obtener un listado de los puntos de donación cercanos dentro de un radio específico, dado un punto con coordenadas de **latitud** y **longitud**.
 
-✅ **Objetivo:** Extender la posibilidad de acercar donaciones a distintas comunidades.
+**Objetivo:** Extender la posibilidad de acercar donaciones a distintas comunidades.
 
 ---
 
-## 🔍 Parámetros de Consulta (Query Parameters)
+## Parámetros de Consulta (Query Parameters)
 
 | Parámetro        | Requerido | Descripción                                          | Ejemplo                 |
 | ---------------- | --------- | ---------------------------------------------------- | ----------------------- |
@@ -27,9 +27,9 @@ Esta API proporciona un servicio REST para obtener un listado de los puntos de d
 
 ---
 
-## 🌍 Ejemplo de solicitudes
+## Ejemplo de solicitudes
 <details>
-  <summary>🔹 Solicitud con radio predeterminado (5 km)</summary>
+  <summary>Solicitud con radio predeterminado (5 km)</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.66291992043316&longitud=-58.46732181710551
@@ -38,7 +38,7 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.66291992043316&lo
 </details>
 
 <details>
-  <summary>🔹 Solicitud con radio específico</summary>
+  <summary>Solicitud con radio específico</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.66291992043316&longitud=-58.46732181710551&radio=1000
@@ -47,7 +47,7 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.66291992043316&lo
 </details>
 
 <details>
-  <summary>🔹 Solicitud con radio específico y horario específico</summary>
+  <summary>Solicitud con radio específico y horario específico</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&longitud=-58.420012658665414&radio=250&horarioBuscado=23.00.00
@@ -56,7 +56,7 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
 </details>
 
 <details>
-  <summary>🔹 Solicitud con radio específico y días</summary>
+  <summary>Solicitud con radio específico y días</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&longitud=-58.420012658665414&radio=250&diasBuscados=lunes
@@ -65,21 +65,16 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
 </details>
 
 <details>
-  <summary>🔹 Solicitud con radio específico, horario específico y días</summary>
+  <summary>Solicitud con radio específico, horario específico y días</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&longitud=-58.420012658665414&radio=250&horarioBuscado=23.00.00&diasBuscados=lunes
 ```
-
 </details>
 
 ---
 
-## 📤 Ejemplo de respuesta esperada
-
-
-<details>
-  <summary>📜 Ver respuesta JSON</summary>
+## Ejemplo de respuesta esperada
 
 ```bash
 [
@@ -134,22 +129,18 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
 ]
 ```
 
-</details>
-
 ---
 
-## 🚀 Guía de despliegue local
+## Guía de despliegue local
 
-### 📌 Requisitos Previos
+### Requisitos Previos
 - **Java JDK** (preferiblemente versión 8 o superior).
 - **IDE**: IntelliJ IDEA, Eclipse o NetBeans.
 - **MySQL**: Asegúrate de que MySQL esté instalado y en ejecución.
 
-<br>
+### Pasos para el Despliegue
 
-### 🔧 Pasos para el Despliegue
-
-#### 1️⃣ Crear la Base de Datos
+#### 1️ Crear la Base de Datos
 1. Abre tu cliente MySQL (puede ser MySQL Workbench o la línea de comandos).
 2. Ejecuta el siguiente comando SQL para crear la base de datos:
 
@@ -157,14 +148,9 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
 CREATE DATABASE puntosDeDonacionDB;
 ```
 
-<br>
-
-#### 2️⃣ Modificar el `persistence.xml`
+#### 2️ Modificar el `persistence.xml`
   1. Navega a la carpeta `src/main/resources` de tu proyecto.
   2. Abre el archivo `persistence.xml` y asegúrate de que las configuraciones de la base de datos estén correctas. Aquí tienes un ejemplo modificado:
-
-<details>
-  <summary> 👀 Ver ejemplo </summary>
 
    ```xml
      <?xml version="1.0" encoding="UTF-8"?>
@@ -193,14 +179,11 @@ CREATE DATABASE puntosDeDonacionDB;
      </persistence>
 ```
 
-</details>
 
-#### 3️⃣ Cargar los Puntos de Donación
+
+#### 3️ Cargar los Puntos de Donación
   1. Crea una clase para cargar los puntos de donación en la base de datos. Usa el siguiente código:
 
-<details>
-  <summary> 💻 Ver código </summary>
-  
    ```java
    public class CargaDePuntosBD implements WithSimplePersistenceUnit {
 
@@ -248,15 +231,11 @@ CREATE DATABASE puntosDeDonacionDB;
    }
 ```
 
-</details>
-
   2. Agrega los distintos puntos de donacion al código y ejecuta el `main` de esta clase para cargar los puntos de donación en la base de datos.
 
-#### 4️⃣ Levantar el Servidor
-  1. Crea una clase para iniciar el servidor:
+#### 4️ Levantar el Servidor
 
-<details>
-  <summary> 📂 Ver clase </summary>
+  1. Crea una clase para iniciar el servidor:
 
   ```java
      public class RecomendacionDePuntosMain implements WithSimplePersistenceUnit {
@@ -270,9 +249,7 @@ CREATE DATABASE puntosDeDonacionDB;
      }
 ```
 
-</details>
-
   2. Ejecuta el `main` de esta clase. El servidor debería estar corriendo en `http://localhost:7000`.
 
-#### 🎯 Conclusión
+#### Conclusión
 Ahora tienes tu servicio de puntos de donación corriendo localmente. Puedes acceder a él y empezar a utilizar las funcionalidades implementadas. ¡Éxito en tu proyecto!
