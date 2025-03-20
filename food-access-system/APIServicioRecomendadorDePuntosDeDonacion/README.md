@@ -2,55 +2,80 @@
 ![Versión](https://img.shields.io/badge/Versión-1.0.0-brightgreen)
 
 ## Documentación
-La documentación de la API Recomendadora de Puntos de Donación puede ser encontrada [acá](https://app.swaggerhub.com/apis/THGONZALEZ/API_Recomendacion_de_Puntos_de_Donacion/1.0.0)
+
+Puedes encontrar la documentación completa de la API en [SwaggerHub](https://app.swaggerhub.com/apis/THGONZALEZ/API_Recomendacion_de_Puntos_de_Donacion/1.0.0).
+
+---
 
 ## Descripción
-Esta API expone un servicio REST para obtener un listado de los puntos de donación cercanos dentro de un radio específico, dado un punto con coordenadas de latitud y longitud. Esto servirá para extender la posibilidad de acercar donaciones a otras comunidades existentes.
 
+Esta API proporciona un servicio REST para obtener un listado de los puntos de donación cercanos dentro de un radio específico, dado un punto con coordenadas de **latitud** y **longitud**.
 
-## Parámetros de consulta (Query Parameters)
-![queryParams](img/queryparams.PNG)
+**Objetivo:** Extender la posibilidad de acercar donaciones a distintas comunidades.
 
-- `latitud` (requerido): La latitud del punto central desde el cual se hará la búsqueda.
-  - **Ejemplo**: `-34.66291992043316`
-- `longitud` (requerido): La longitud del punto central desde el cual se hará la búsqueda.
-  - **Ejemplo**: `-58.46732181710551`
-- `radio` (opcional): El radio en kilómetros dentro del cual se buscarán los puntos de donación. En caso de no ingresar ninguno, se tomará un radio de 5km por defecto.
-  - **Ejemplo**: `1` (para un radio de 1 km)
-- `horarioBuscado` (opcional): El horario específico dentro del cual se buscarán los puntos de donación que estén disponibles. 
-  - **Ejemplo**: `17.30.00`
-- `díasBuscados` (opcional): Días específicos dentro de los cuales se buscarán los puntos de donación que estén disponibles en al menos uno de esos días. 
-  - **Ejemplo**: `lunes, martes, sabado`
+---
 
-## Ejemplo de solicitud con radio predeterminado
+## Parámetros de Consulta (Query Parameters)
+
+| Parámetro        | Requerido | Descripción                                          | Ejemplo                 |
+| ---------------- | --------- | ---------------------------------------------------- | ----------------------- |
+| `latitud`        | ✅         | Latitud del punto central                            | `-34.66291992043316`    |
+| `longitud`       | ✅         | Longitud del punto central                           | `-58.46732181710551`    |
+| `radio`          | ❌         | Radio en km para la búsqueda (Por defecto: **5 km**) | `1`                     |
+| `horarioBuscado` | ❌         | Horario específico de disponibilidad                 | `17.30.00`              |
+| `diasBuscados`   | ❌         | Días de disponibilidad                               | `lunes, martes, sabado` |
+
+---
+
+## Ejemplo de solicitudes
+<details>
+  <summary>Solicitud con radio predeterminado (5 km)</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.66291992043316&longitud=-58.46732181710551
 ```
 
-## Ejemplo de solicitud con radio específico
+</details>
+
+<details>
+  <summary>Solicitud con radio específico</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.66291992043316&longitud=-58.46732181710551&radio=1000
 ```
 
-## Ejemplo de solicitud con radio específico y horario específico
+</details>
+
+<details>
+  <summary>Solicitud con radio específico y horario específico</summary>
 
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&longitud=-58.420012658665414&radio=250&horarioBuscado=23.00.00
 ```
 
-## Ejemplo de solicitud con radio específico y días
+</details>
+
+<details>
+  <summary>Solicitud con radio específico y días</summary>
+
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&longitud=-58.420012658665414&radio=250&diasBuscados=lunes
 ```
 
-## Ejemplo de solicitud con radio específico, horario específico y días
+</details>
+
+<details>
+  <summary>Solicitud con radio específico, horario específico y días</summary>
+
 ```bash
 GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&longitud=-58.420012658665414&radio=250&horarioBuscado=23.00.00&diasBuscados=lunes
 ```
+</details>
+
+---
 
 ## Ejemplo de respuesta esperada
+
 ```bash
 [
     {
@@ -104,15 +129,18 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
 ]
 ```
 
+---
+
 ## Guía de despliegue local
 
 ### Requisitos Previos
 - **Java JDK** (preferiblemente versión 8 o superior).
-- **IDE**: IntelliJ IDEA, Eclipse, o NetBeans.
+- **IDE**: IntelliJ IDEA, Eclipse o NetBeans.
 - **MySQL**: Asegúrate de que MySQL esté instalado y en ejecución.
 
 ### Pasos para el Despliegue
-#### 1. Crear la Base de Datos
+
+#### 1️ Crear la Base de Datos
 1. Abre tu cliente MySQL (puede ser MySQL Workbench o la línea de comandos).
 2. Ejecuta el siguiente comando SQL para crear la base de datos:
 
@@ -120,7 +148,7 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
 CREATE DATABASE puntosDeDonacionDB;
 ```
 
-#### 2. Modificar el `persistence.xml`
+#### 2️ Modificar el `persistence.xml`
   1. Navega a la carpeta `src/main/resources` de tu proyecto.
   2. Abre el archivo `persistence.xml` y asegúrate de que las configuraciones de la base de datos estén correctas. Aquí tienes un ejemplo modificado:
 
@@ -150,7 +178,10 @@ CREATE DATABASE puntosDeDonacionDB;
          </persistence-unit>
      </persistence>
 ```
-#### 3. Cargar los Puntos de Donación
+
+
+
+#### 3️ Cargar los Puntos de Donación
   1. Crea una clase para cargar los puntos de donación en la base de datos. Usa el siguiente código:
 
    ```java
@@ -202,10 +233,11 @@ CREATE DATABASE puntosDeDonacionDB;
 
   2. Agrega los distintos puntos de donacion al código y ejecuta el `main` de esta clase para cargar los puntos de donación en la base de datos.
 
-#### 4. Levantar el Servidor
+#### 4️ Levantar el Servidor
+
   1. Crea una clase para iniciar el servidor:
 
-     ```java
+  ```java
      public class RecomendacionDePuntosMain implements WithSimplePersistenceUnit {
 
          public static void main(String[] args) {
@@ -215,6 +247,7 @@ CREATE DATABASE puntosDeDonacionDB;
              new RecomendadorDePuntosDonacionesController(app, recomendadorDePuntosDonacionesService);
          }
      }
+```
 
   2. Ejecuta el `main` de esta clase. El servidor debería estar corriendo en `http://localhost:7000`.
 
