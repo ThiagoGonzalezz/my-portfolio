@@ -9,10 +9,10 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 
 ## 🛠️ Tecnologías Utilizadas  
 
-- **Backend:** Java con Javalin y Hibernate.  
-- **Frontend:** HTML, CSS y JavaScript con Bootstrap para diseño responsivo.  
-- **Base de Datos:** MySQL con ORM para persistencia de datos.  
-- **APIs:** Integración con servicios externos para geolocalización, pagos y mensajería.  
+- **Backend:** Java con el framework Javalin y Hibernate.  
+- **Frontend:** Figma, HTML, CSS, JavaScript y Handlebars como motor de plantillas .  
+- **Base de Datos:** MySQL con Hibernate como ORM para la persistencia de datos.  
+- **APIs:** Integración con servicios externos para geolocalización y mensajería.  
 - **Seguridad:** Implementación de OWASP Top Ten y autenticación segura con control de credenciales.  
 - **Broker de Mensajería:** Para comunicación en tiempo real con las heladeras y reporte de alertas.  
 
@@ -56,9 +56,9 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 ## 📚 Documentación
 
 ### 📌 **Diagramas y Arquitectura**
-- [📄 Diagrama de Clases](vianditasONG/docs/diagramaDeClases/DDC.png)
-- [🗄️ Diagrama Entidad-Relación](vianditasONG/docs/diagramaEntidadRelacion/DER.png)
-- [🚀 Diagrama de Despliegue](vianditasONG/docs/DiagramaDeDespliegue.png)
+- [📄 Diagrama de Clases](vianditasONG/docs/diagramas/diagramaDeClases/DDC.png)
+- [🗄️ Diagrama Entidad-Relación](vianditasONG/docs/diagramas/diagramaEntidadRelacion/DER.png)
+- [🚀 Diagrama de Despliegue](vianditasONG/docs/diagramas/DiagramaDeDespliegue.png)
 
 ### 🔌 **API REST**
 - [📖 Documentación API REST](APIServicioRecomendadorDePuntosDeDonacion)
@@ -66,12 +66,12 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 ### 🛠️ **Instalación y Uso**
 - ⚙️ Guía de Instalación
 - 📘 Manual de Usuario
-- [🎯 Casos de Uso](vianditasONG/docs/casosDeUso/UseCaseDiagram.png)
+- [🎯 Casos de Uso](vianditasONG/docs/diagramas/casosDeUso/UseCaseDiagram.png)
 
 ### 🎨 **UX/UI**
-- 🖼️ Wireframes
-- 📐 Bocetos
-- 📍 Flujo de Navegación
+- [📐 Wireframes](vianditasONG/docs/front/wireframes/wireframesTotales.pdf)
+- [🖼️ Maquetado](vianditasONG/docs/front/maquetado/maquetado.fig)
+- [📍 Flujo de Navegación](https://www.figma.com/design/u2p54juzHgMHk7J5hXyxkI/DDS)
 
 ### 📦 **Producto Final**
 - 📸 Demo
