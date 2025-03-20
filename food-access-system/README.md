@@ -60,14 +60,21 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 - [🗄️ Diagrama Entidad-Relación](vianditasONG/docs/diagramaEntidadRelacion/DER.png)
 - [🚀 Diagrama de Despliegue](vianditasONG/docs/DiagramaDeDespliegue.png)
 
-### 🔌 **API y Desarrollo**
+### 🔌 **API REST**
 - [📖 Documentación API REST](APIServicioRecomendadorDePuntosDeDonacion)
 
 ### 🛠️ **Instalación y Uso**
 - ⚙️ Guía de Instalación
 - 📘 Manual de Usuario
 - [🎯 Casos de Uso](vianditasONG/docs/casosDeUso/UseCaseDiagram.png)
+
+### 🎨 **UX/UI**
+- 🖼️ Wireframes
+- 📐 Bocetos
 - 📍 Flujo de Navegación
+
+### 📦 **Producto Final**
+- 📸 Demo
 
 ---  
 
