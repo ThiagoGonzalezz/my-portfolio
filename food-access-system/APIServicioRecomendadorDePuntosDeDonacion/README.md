@@ -195,8 +195,6 @@ CREATE DATABASE puntosDeDonacionDB;
 
 </details>
 
-<br>
-
 #### 3️⃣ Cargar los Puntos de Donación
   1. Crea una clase para cargar los puntos de donación en la base de datos. Usa el siguiente código:
 
@@ -254,8 +252,6 @@ CREATE DATABASE puntosDeDonacionDB;
 
   2. Agrega los distintos puntos de donacion al código y ejecuta el `main` de esta clase para cargar los puntos de donación en la base de datos.
 
-<br>
-
 #### 4️⃣ Levantar el Servidor
   1. Crea una clase para iniciar el servidor:
 
@@ -277,8 +273,6 @@ CREATE DATABASE puntosDeDonacionDB;
 </details>
 
   2. Ejecuta el `main` de esta clase. El servidor debería estar corriendo en `http://localhost:7000`.
-
-<br>
 
 #### 🎯 Conclusión
 Ahora tienes tu servicio de puntos de donación corriendo localmente. Puedes acceder a él y empezar a utilizar las funcionalidades implementadas. ¡Éxito en tu proyecto!
