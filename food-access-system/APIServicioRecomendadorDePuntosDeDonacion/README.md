@@ -145,6 +145,8 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
 - **IDE**: IntelliJ IDEA, Eclipse o NetBeans.
 - **MySQL**: Asegúrate de que MySQL esté instalado y en ejecución.
 
+<br>
+
 ### 🔧 Pasos para el Despliegue
 
 #### 1️⃣ Crear la Base de Datos
@@ -154,6 +156,8 @@ GET http://localhost:7000/api/recomendadorDePuntos?latitud=-34.59824563867314&lo
 ```sql
 CREATE DATABASE puntosDeDonacionDB;
 ```
+
+<br>
 
 #### 2️⃣ Modificar el `persistence.xml`
   1. Navega a la carpeta `src/main/resources` de tu proyecto.
@@ -190,6 +194,8 @@ CREATE DATABASE puntosDeDonacionDB;
 ```
 
 </details>
+
+<br>
 
 #### 3️⃣ Cargar los Puntos de Donación
   1. Crea una clase para cargar los puntos de donación en la base de datos. Usa el siguiente código:
@@ -248,13 +254,15 @@ CREATE DATABASE puntosDeDonacionDB;
 
   2. Agrega los distintos puntos de donacion al código y ejecuta el `main` de esta clase para cargar los puntos de donación en la base de datos.
 
+<br>
+
 #### 4️⃣ Levantar el Servidor
   1. Crea una clase para iniciar el servidor:
 
 <details>
   <summary> 📂 Ver clase </summary>
 
-     ```java
+  ```java
      public class RecomendacionDePuntosMain implements WithSimplePersistenceUnit {
 
          public static void main(String[] args) {
@@ -269,6 +277,8 @@ CREATE DATABASE puntosDeDonacionDB;
 </details>
 
   2. Ejecuta el `main` de esta clase. El servidor debería estar corriendo en `http://localhost:7000`.
+
+<br>
 
 #### 🎯 Conclusión
 Ahora tienes tu servicio de puntos de donación corriendo localmente. Puedes acceder a él y empezar a utilizar las funcionalidades implementadas. ¡Éxito en tu proyecto!
