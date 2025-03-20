@@ -56,18 +56,18 @@ El sistema permite a los colaboradores registrarse, realizar **donaciones moneta
 ## 📚 Documentación
 
 ### 📌 **Diagramas y Arquitectura**
-- [📄 Diagrama de Clases](docs/diagrama_clases.pdf)
-- [🗄️ Diagrama Entidad-Relación](docs/diagrama_er.pdf)
-- [🚀 Diagrama de Despliegue](docs/diagrama_despliegue.pdf)
+- 📄 Diagrama de Clases
+- [🗄️ Diagrama Entidad-Relación](vianditasONG/docs/DER/DER.png)
+- 🚀 Diagrama de Despliegue
 
 ### 🔌 **API y Desarrollo**
-- [📖 Documentación API REST](docs/api_documentation.md)
+- 📖 Documentación API REST
 
 ### 🛠️ **Instalación y Uso**
-- [⚙️ Guía de Instalación](docs/install_guide.md)
-- [📘 Manual de Usuario](docs/manual_usuario.md)
+- ⚙️ Guía de Instalación
+- 📘 Manual de Usuario
 - [🎯 Casos de Uso](vianditasONG/docs/casosDeUso/UseCaseDiagram.png)
-- [📍 Flujo de Navegación](docs/flujo_navegacion.md)
+- 📍 Flujo de Navegación
 
 ---  
 
