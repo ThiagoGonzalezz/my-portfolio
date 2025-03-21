@@ -19,7 +19,7 @@ A **support system for food accessibility** that leverages a network of public r
 ✔️ Scalable cloud deployment  
 
 🔹 **Technologies & Concepts:**  
-Java | Javalin | REST APIs | MVC | Broker | ORM (Hibernate) | Cloud Deployment (AWS) | Template Engine (Handlebars) | Design Patterns
+Java | Javalin | REST APIs | MVC | Broker | ORM (Hibernate) | Cloud Deployment (AWS) | Template Engine (Handlebars) | Figma | Design Patterns
 
 ---
 
